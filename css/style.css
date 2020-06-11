@@ -1,0 +1,117 @@
+/*VARIABLES COLORES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #231F20;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+header .menu-header {
+  display: flex;
+}
+header .menu-header a {
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+header .menu-header a:last-child {
+  margin-left: 40px;
+}
+#first-frame {
+  background-color: #4f4c4d;
+  padding: 0 10%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first-frame .your-partner {
+  display: flex;
+  align-items: center;
+  width: 632px;
+  height: 179px;
+  position: relative;
+}
+#first-frame .your-partner .absolute-1 {
+  width: 63px;
+  height: 46px;
+  border-top: 1px solid #F69621;
+  border-left: 1px solid #F69621;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#first-frame .your-partner .absolute-2 {
+  width: 63px;
+  height: 46px;
+  border-top: 1px solid #F69621;
+  border-right: 1px solid #F69621;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#first-frame .your-partner .absolute-3 {
+  width: 63px;
+  height: 46px;
+  border-left: 1px solid #F69621;
+  border-bottom: 1px solid #F69621;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#first-frame .your-partner .absolute-4 {
+  width: 63px;
+  height: 46px;
+  border-right: 1px solid #F69621;
+  border-bottom: 1px solid #F69621;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#first-frame .your-partner .item-partner {
+  margin: auto;
+  text-align: center;
+}
+#first-frame .your-partner .item-partner h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+#first-frame .your-partner .item-partner h3 {
+  font-size: 38px;
+  font-weight: 400;
+}
+#first-frame .your-partner .item-partner p {
+  font-size: 13px;
+  font-weight: 100;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+#first-frame .your-partner .item-partner button {
+  background-color: #F69621;
+  border: unset;
+  color: white;
+  width: 132px;
+  height: 21px;
+  position: absolute;
+  bottom: -10.5px;
+  left: calc(50% - 66px);
+  border-radius: 10px;
+}

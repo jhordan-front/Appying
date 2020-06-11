@@ -1,0 +1,130 @@
+/*VARIABLES COLORES*/
+
+@fondo-oscuro: #231F20;
+@fondo-claro: #4f4c4d;
+@boton-naranja: #F48B12;
+@naranja-claro: #F69621;
+@naranja-oscuro: #BF6400;
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: unset;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+img{
+	vertical-align: top;
+	max-width: 100%;
+}
+
+// Encabezado
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #231F20;
+    justify-content: space-between;
+    padding: 0 10%;
+    .menu-header{
+    	display: flex;
+    	a {
+		    margin-left: 15px;
+		    font-size: 12px;
+		    font-weight: 500;
+		}
+		a:last-child{
+    		margin-left: 40px;
+    	}
+    }
+}
+// Termina encabezado
+#first-frame{
+	background-color: @fondo-claro;
+    padding: 0 10%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	.your-partner{
+		display: flex;
+		align-items:center;
+		width: 632px;
+		height: 179px;
+		position: relative;
+		.absolute-1{
+			width: 63px;
+			height: 46px;
+			border-top: 1px solid @naranja-claro;
+			border-left: 1px solid @naranja-claro;
+			position:absolute;
+			left: 0;
+			top: 0;
+		}
+		.absolute-2{
+			width: 63px;
+			height: 46px;
+			border-top: 1px solid @naranja-claro;
+			border-right: 1px solid @naranja-claro;
+			position:absolute;
+			right: 0;
+			top: 0;
+		}
+		.absolute-3{
+			width: 63px;
+			height: 46px;
+			border-left: 1px solid @naranja-claro;
+			border-bottom: 1px solid @naranja-claro;
+			position:absolute;
+			left: 0;
+			bottom: 0;
+		}
+		.absolute-4{
+			width: 63px;
+			height: 46px;
+			border-right: 1px solid @naranja-claro;
+			border-bottom: 1px solid @naranja-claro;
+			position:absolute;
+			right: 0;
+			bottom: 0;
+
+		}
+		.item-partner {
+		    margin: auto;
+		    text-align: center;
+	 		h2 {
+			    font-size: 38px;
+			    font-weight: bold;
+			}
+			h3 {
+			    font-size: 38px;
+			    font-weight: 400;
+			}
+			p {
+			    font-size: 13px;
+			    font-weight: 100;
+			    margin-top: 15px;
+			    margin-bottom: 25px;
+			}
+			button {
+		    background-color: @naranja-claro;
+		    border: unset;
+		    color: white;
+		    width: 132px;
+		    height: 21px;
+		    position: absolute;
+		    bottom: -10.5px;
+		    left: calc(50% - 66px);
+		    border-radius: 10px;
+			}
+		}		    
+	}
+}
