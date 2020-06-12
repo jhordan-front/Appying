@@ -17,42 +17,50 @@ img {
   max-width: 100%;
 }
 header {
-  height: 50px;
+  height: 80px;
   display: flex;
   align-items: center;
   background-color: #231F20;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0 93px;
+}
+header .logo-header {
+  width: 193px;
 }
 header .menu-header {
   display: flex;
 }
 header .menu-header a {
   margin-left: 15px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
 }
 header .menu-header a:last-child {
   margin-left: 40px;
 }
 #first-frame {
-  background-color: #4f4c4d;
   padding: 0 10%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#first-frame img.background {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  top: -55vh;
+}
 #first-frame .your-partner {
   display: flex;
   align-items: center;
-  width: 632px;
-  height: 179px;
+  width: 1020px;
+  height: 286.4px;
   position: relative;
 }
 #first-frame .your-partner .absolute-1 {
-  width: 63px;
-  height: 46px;
+  width: 100px;
+  height: 73px;
   border-top: 1px solid #F69621;
   border-left: 1px solid #F69621;
   position: absolute;
@@ -60,8 +68,8 @@ header .menu-header a:last-child {
   top: 0;
 }
 #first-frame .your-partner .absolute-2 {
-  width: 63px;
-  height: 46px;
+  width: 100px;
+  height: 73px;
   border-top: 1px solid #F69621;
   border-right: 1px solid #F69621;
   position: absolute;
@@ -69,8 +77,8 @@ header .menu-header a:last-child {
   top: 0;
 }
 #first-frame .your-partner .absolute-3 {
-  width: 63px;
-  height: 46px;
+  width: 100px;
+  height: 73px;
   border-left: 1px solid #F69621;
   border-bottom: 1px solid #F69621;
   position: absolute;
@@ -78,8 +86,8 @@ header .menu-header a:last-child {
   bottom: 0;
 }
 #first-frame .your-partner .absolute-4 {
-  width: 63px;
-  height: 46px;
+  width: 100px;
+  height: 73px;
   border-right: 1px solid #F69621;
   border-bottom: 1px solid #F69621;
   position: absolute;
@@ -114,4 +122,8 @@ header .menu-header a:last-child {
   bottom: -10.5px;
   left: calc(50% - 66px);
   border-radius: 10px;
+}
+#first-frame .your-partner .item-partner button img {
+  width: 14px;
+  margin: 0 3px;
 }
