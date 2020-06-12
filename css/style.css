@@ -1,4 +1,5 @@
 /*VARIABLES COLORES*/
+/*GENERALES*/
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +55,7 @@ header .menu-header a {
 header .menu-header a:last-child {
   margin-left: 40px;
 }
+/*SECTION PRIMER FRAME*/
 #first-frame {
   padding: 0 10%;
   height: calc(100vh - 80px);
@@ -153,25 +155,26 @@ header .menu-header a:last-child {
 #first-frame .your-partner .item-partner button img {
   width: 20px;
 }
-.consulting-parter {
+/*----------SEXTION CONSULTAS......*/
+section.consulting-parter {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   display: flex;
   position: relative;
 }
-.consulting-parter img.background {
+section.consulting-parter img.background {
   position: absolute;
   z-index: -10;
   width: 100%;
   top: -66vh;
 }
-.consulting-parter .item-aws {
+section.consulting-parter .item-aws {
   width: 300px;
   margin: auto 0;
   margin-left: 90px;
 }
-.consulting-parter .consultas-partner {
+section.consulting-parter .consultas-partner {
   width: 490px;
   display: grid;
   height: 70%;
@@ -179,18 +182,18 @@ header .menu-header a:last-child {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
-.consulting-parter .consultas-partner h2 {
+section.consulting-parter .consultas-partner h2 {
   text-align: center;
   font-size: 55px;
 }
-.consulting-parter .consultas-partner p {
+section.consulting-parter .consultas-partner p {
   font-weight: 100;
   text-align: center;
   width: -webkit-min-content;
   width: min-content;
   margin: auto;
 }
-.consulting-parter .consultas-partner .items-partner1 {
+section.consulting-parter .consultas-partner .items-partner1 {
   grid-row-start: 1;
   grid-row-end: 3;
   margin: auto;
@@ -199,30 +202,30 @@ header .menu-header a:last-child {
   width: min-content;
   text-align: center;
 }
-.consulting-parter .consultas-partner .items-partner2 {
+section.consulting-parter .consultas-partner .items-partner2 {
   grid-row-start: 3;
   grid-row-end: 5;
 }
-.consulting-parter .consultas-partner .items-partner3 {
+section.consulting-parter .consultas-partner .items-partner3 {
   grid-row-end: 1;
   grid-row-start: 2;
   grid-column: 2;
 }
-.consulting-parter .consultas-partner .items-partner4 {
+section.consulting-parter .consultas-partner .items-partner4 {
   grid-row-start: 2;
   grid-row-end: 4;
   grid-column: 2;
   display: flex;
 }
-.consulting-parter .consultas-partner .items-partner4 img {
+section.consulting-parter .consultas-partner .items-partner4 img {
   width: 130px;
   margin: auto;
 }
-.consulting-parter .consultas-partner .items-partner5 {
+section.consulting-parter .consultas-partner .items-partner5 {
   grid-row-start: 4;
   grid-row-end: 5;
 }
-.consulting-parter .consultas-partner .items-partner6 {
+section.consulting-parter .consultas-partner .items-partner6 {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column: 3;
@@ -232,12 +235,12 @@ header .menu-header a:last-child {
   width: min-content;
   text-align: center;
 }
-.consulting-parter .consultas-partner .items-partner7 {
+section.consulting-parter .consultas-partner .items-partner7 {
   grid-row-start: 3;
   grid-row-end: 5;
   grid-column: 3;
 }
-.consulting-parter .man-partner {
+section.consulting-parter .man-partner {
   width: 28%;
   margin: auto;
 }
@@ -253,6 +256,7 @@ section.separador .border-top {
   width: 55%;
   margin: auto;
 }
+/*-------------WHY-APPLYING*/
 section#why-applying {
   height: auto;
   overflow: hidden;
@@ -355,6 +359,7 @@ section#why-applying .marcas-aws a {
   text-align: center;
   font-weight: 100;
 }
+/*---------FRAME BUILDING----------*/
 #building {
   overflow: hidden;
   position: relative;
@@ -380,4 +385,267 @@ section#why-applying .marcas-aws a {
   text-align: right;
   color: black;
   margin-bottom: 30px;
+}
+/*---------SOLUTIONS---------------*/
+section#solutions {
+  height: auto;
+}
+section#solutions .title-section h2 {
+  color: black;
+}
+section#solutions .title-section p {
+  color: black;
+}
+section#solutions .items-solutions {
+  height: auto;
+  min-height: 380px;
+  width: 950px;
+  z-index: 30;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 70px;
+}
+section#solutions .items-solutions .sub-items-solutions {
+  position: relative;
+  display: flex;
+  border-right: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+}
+section#solutions .items-solutions .sub-items-solutions img {
+  width: 80%;
+  margin: 0 auto;
+}
+section#solutions .items-solutions .sub-items-solutions h2 {
+  color: black;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+section#solutions .items-solutions .sub-items-solutions p {
+  color: black;
+  width: 80%;
+  text-align: center;
+  font-size: 15px;
+}
+section#solutions .items-solutions .active:before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -40px;
+  border-top: 40px solid white;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+section#solutions .items-solutions .tab-solution5 {
+  border: none;
+}
+/*---------FRAME SOLUTION----------*/
+section#frame-solution {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+section#frame-solution .solutions-frame {
+  width: 100%;
+  display: flex;
+}
+section#frame-solution .solutions-frame .col.izq {
+  width: 50%;
+  float: left;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-rigth: 20px;
+}
+section#frame-solution .solutions-frame .col.izq h2.title-solution {
+  font-size: 35px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+section#frame-solution .solutions-frame .col.izq p {
+  font-size: 19px;
+  font-weight: 200;
+  text-align: left;
+}
+section#frame-solution .solutions-frame .col.izq button {
+  width: 240px;
+  margin: 20px 0;
+  height: 31px;
+  color: white;
+  background: #F69621;
+  border-radius: 10px;
+  border: unset;
+  cursor: pointer;
+}
+section#frame-solution .solutions-frame .col.izq button img {
+  width: 20px;
+}
+section#frame-solution .solutions-frame .col.der {
+  width: 50%;
+  float: right;
+  display: flex;
+}
+section#frame-solution .solutions-frame .col.der .video-applying {
+  margin: auto;
+}
+section#frame-solution .solutions-frame .col.der p {
+  text-align: right;
+  margin-top: 20px;
+}
+section#frame-solution .none {
+  display: none;
+}
+section#form {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+section#form img {
+  top: -62%;
+}
+section#form form#contact {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  margin: 0 auto;
+  margin-top: 80px;
+  border-bottom: 1px solid black;
+  padding: 0 120px;
+  padding-bottom: 50px;
+}
+section#form form#contact input[type="text"],
+section#form form#contact input[type="email"],
+section#form form#contact input[type="tel"],
+section#form form#contact input[type="option"],
+section#form form#contact select#solution {
+  height: 45px;
+  border: 1px solid black;
+  margin: 8px 0;
+  padding: 15px;
+  border-radius: 22px;
+}
+section#form form#contact button {
+  background-color: #F48B12;
+  border: unset;
+  color: white;
+  width: 120px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+section#form form#contact button img {
+  width: 20px;
+}
+section#form p {
+  color: black;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 35px;
+  font-weight: 100;
+}
+/*FOOTER*/
+footer {
+  height: 50vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+footer img.background {
+  bottom: -275%;
+}
+footer .col-top {
+  width: 140px;
+  margin: 20px auto;
+}
+footer h2 {
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0 auto;
+  word-spacing: 3px;
+}
+footer .rrss {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  height: 61px;
+  position: relative;
+  grid-template-columns: 25% 50% 25%;
+}
+footer .rrss .items-rrss {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 120px;
+  align-content: space-evenly;
+}
+footer .rrss .items-rrss a {
+  width: 40px;
+}
+footer .rrss .items-rrss-phone {
+  display: grid;
+  grid-template-columns: 40px auto;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+}
+footer .rrss .items-rrss-mail {
+  display: grid;
+  grid-template-columns: 40px auto;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+}
+footer .derechosreservados {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.iconos-flotantes {
+  width: 180px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 200px;
+  align-items: center;
+  position: fixed;
+  bottom: calc(50% - 90px);
+  right: 20px;
+}
+.iconos-flotantes .scroll-top,
+.iconos-flotantes .lets-go,
+.iconos-flotantes .whatsapp {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  color: #F69621;
+  align-items: center;
+}
+.iconos-flotantes .scroll-top p,
+.iconos-flotantes .lets-go p,
+.iconos-flotantes .whatsapp p {
+  text-align: right;
+  margin-right: 10px;
 }
