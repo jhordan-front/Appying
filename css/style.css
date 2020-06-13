@@ -27,7 +27,7 @@ img.background {
 .title-section {
   margin: auto;
   text-align: center;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 .title-section h2 {
   font-size: 49px;
@@ -35,6 +35,10 @@ img.background {
 }
 .title-section h2 strong {
   color: #F48B12;
+}
+.title-section p {
+  color: white !important;
+  margin-top: 20px !important;
 }
 .marcas-aws a img {
   display: none;
@@ -52,6 +56,9 @@ header {
   background-color: #231F20;
   justify-content: space-between;
   padding: 0 93px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 header .logo-header {
   width: 193px;
@@ -70,7 +77,7 @@ header .menu-header a:last-child {
 /*SECTION PRIMER FRAME*/
 #first-frame {
   padding: 0 10%;
-  height: calc(100vh - 80px);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,6 +174,21 @@ header .menu-header a:last-child {
 #first-frame .your-partner .item-partner button img {
   width: 20px;
 }
+/*ICONOS FLOTANTES*/
+.iconos-flotantes a:hover p {
+  opacity: 1;
+}
+.iconos-flotantes p {
+  opacity: 0;
+  transition: 0.3s;
+}
+/*MARCAS DESKTOP*/
+.marcas-aws a img {
+  max-width: 70px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
 /*----------SEXTION CONSULTAS......*/
 section.consulting-parter {
   height: 100vh;
@@ -185,12 +207,13 @@ section.consulting-parter .item-aws {
   width: 300px;
   margin: auto 0;
   margin-left: 90px;
+  margin-right: 70px;
 }
 section.consulting-parter .consultas-partner {
-  width: 490px;
+  width: 520px;
   display: grid;
-  height: 70%;
-  margin: auto 0;
+  height: 490px;
+  margin: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
@@ -201,9 +224,9 @@ section.consulting-parter .consultas-partner h2 {
 section.consulting-parter .consultas-partner p {
   font-weight: 100;
   text-align: center;
-  width: -webkit-min-content;
-  width: min-content;
   margin: auto;
+  font-size: 19px;
+  padding: 0px 15px;
 }
 section.consulting-parter .consultas-partner .items-partner1 {
   grid-row-start: 1;
@@ -253,8 +276,8 @@ section.consulting-parter .consultas-partner .items-partner7 {
   grid-column: 3;
 }
 section.consulting-parter .man-partner {
-  width: 28%;
-  margin: auto;
+  width: 450px;
+  margin: auto 0px;
 }
 section.separador {
   height: 100px;
@@ -389,14 +412,15 @@ section#why-applying .marcas-aws a {
 }
 #building .estadistica-aws {
   width: 70%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 #building p.helped {
   width: 20%;
   margin: auto;
-  text-align: right;
+  text-align: center;
   color: black;
   margin-bottom: 30px;
+  font-size: 20px;
 }
 /*---------SOLUTIONS---------------*/
 section#solutions {
@@ -411,7 +435,7 @@ section#solutions .title-section p {
 section#solutions .items-solutions {
   height: auto;
   min-height: 380px;
-  width: 950px;
+  width: 1200px;
   z-index: 30;
   margin: 0 auto;
   display: grid;
@@ -444,6 +468,9 @@ section#solutions .items-solutions .sub-items-solutions p {
   text-align: center;
   font-size: 15px;
 }
+section#solutions .items-solutions .sub-items-solutions.active {
+  background: white;
+}
 section#solutions .items-solutions .active:before {
   content: '';
   width: 0;
@@ -460,9 +487,16 @@ section#solutions .items-solutions .tab-solution5 {
 /*---------FRAME SOLUTION----------*/
 section#frame-solution {
   display: flex;
-  height: 100vh;
   position: relative;
   overflow: hidden;
+  padding: 150px 0px;
+}
+section#frame-solution .background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 section#frame-solution .solutions-frame {
   width: 100%;
@@ -488,17 +522,34 @@ section#frame-solution .solutions-frame .col.izq p {
   text-align: left;
 }
 section#frame-solution .solutions-frame .col.izq button {
-  width: 240px;
   margin: 20px 0;
-  height: 31px;
+  height: 40px;
   color: white;
   background: #F69621;
   border-radius: 10px;
   border: unset;
   cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  width: 240px;
+  padding-left: 40px;
+  padding-right: 20px;
+  overflow: hidden;
+  transition: 0.3s;
 }
 section#frame-solution .solutions-frame .col.izq button img {
   width: 20px;
+  margin-right: 10px;
+  position: absolute;
+  left: 30px;
+  top: 9px;
+  transition: 0.3s;
+}
+section#frame-solution .solutions-frame .col.izq button:hover {
+  padding-left: 20px;
+}
+section#frame-solution .solutions-frame .col.izq button:hover img {
+  transform: translateX(30px) translateY(-30px);
 }
 section#frame-solution .solutions-frame .col.der {
   width: 50%;
@@ -508,6 +559,11 @@ section#frame-solution .solutions-frame .col.der {
 section#frame-solution .solutions-frame .col.der .video-applying {
   margin: auto;
 }
+section#frame-solution .solutions-frame .col.der .video-applying video {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+}
 section#frame-solution .solutions-frame .col.der p {
   text-align: right;
   margin-top: 20px;
@@ -516,9 +572,10 @@ section#frame-solution .none {
   display: none;
 }
 section#form {
-  height: 100vh;
+  padding-top: 60px;
   position: relative;
   overflow: hidden;
+  padding-bottom: 60px;
 }
 section#form img {
   top: -62%;
@@ -560,12 +617,28 @@ section#form form#contact button img {
   width: 20px;
 }
 section#form p {
-  color: white;
+  color: #2a3543;
   width: 300px;
   margin: 0 auto;
   text-align: center;
   margin-top: 35px;
   font-weight: 100;
+  font-size: 20px;
+}
+section#form .clientes-logos {
+  opacity: 1;
+  text-align: center;
+  margin-top: 15px;
+}
+section#form .clientes-logos img {
+  margin: 0px 15px;
+}
+section#form img.background {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px 39%;
 }
 /*FOOTER*/
 footer {
@@ -1057,6 +1130,7 @@ footer .derechosreservados {
   #first-frame {
     height: auto;
     padding: 70px;
+    min-height: 600px;
   }
   #first-frame img.background {
     position: absolute;
