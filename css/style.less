@@ -54,9 +54,13 @@ img.background {
 				}
 			}
 		}
+
 .img-full{
 	display: none;
-}		
+}	
+.tab-responsive{
+	display: none;
+}	
 // Encabezado
 header {
     height: 80px;
@@ -585,7 +589,7 @@ section#form{
 
 	}
 	p{
-		color: black;
+		color: white;
 		width: 300px;
 		margin: 0 auto;
 		text-align: center;
@@ -892,13 +896,276 @@ footer {
 			}
 		}
 	}
+	.iconos-flotantes {
+		display: none;
+	}
+	section#solutions{
+		.items-solutions{
+		    display: flex;
+		    flex-direction: column;
+		    margin: auto;
+		    width: 100%;	
+		    .active:before{
+		    	left: calc(50% - 40px);
+		    }
+		    .sub-items-solutions{
+		    	border: unset;
+		    	border-bottom: 2px solid black;
+		    	display: flex;
+		    	flex-direction: row;
+		    	margin: 0 10%;
+		    	img{
+		    		width: 50%;
+		    		margin: 0 auto;
+		    	}
+		    	p{
+		    		display: none;
+		    	}
+		    }
+		    .tab-responsive{
+		    	background-image: url(../img/fondos/fondo-applying-web-07.jpg);
+		    	padding: 15% 10%;
+		    	display: block;
+		    	h2{
+		    		text-align: center;
+		    		font-size: 23px;
+		    	}
+		    	p {
+				    font-weight: 100;
+				    margin-top: 25px;
+				}
+				.buttons{
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+					margin-top: 45px;
+					.boton-lets{
+						width: max-content;
+					    font-size: 12px;
+					    background: @naranja-claro;
+					    display: flex;
+						align-items: center;
+						padding: 3px 15px;
+						border-radius: 15px;
+						img{
+							width: 20px;
+						}
+
+					}
+					.boton-watch{
+						width: max-content;
+						font-size: 12px;
+						background: red;
+						display: flex;
+						align-items: center;
+						padding: 3px 15px;
+						border-radius: 15px;
+						img{
+							width: 20px;
+						}
+					}
+				}
+		    }
+
+
+		}
+
+	}
+	section#frame-solution {
+    display: none;
+	}
+	section#form {
+    background-position-y: 185%;
+    background-position-x: 58%;
+    background-image: url(../img/fondos/fondo-applying-web-06.jpg);
+    height: auto;
+    	form#contact {
+		    width: 300px;
+		    padding: 0;
+		    button{
+		    	margin-bottom: 30px;
+    			margin-top: 25px;
+		    }
+		}
+		p.our-partners{
+		    color: black;
+		    font-weight: 400;
+		}
+	}
+	footer {
+	    background-image: url(../img/fondos/fondo-applying-web-02.jpg);
+	    background-size: cover;
+	    .rrss{
+	    	display: flex;
+	    	margin-top: 30px;
+    		.items-rrss{
+			    display: flex;
+			    min-width: 60px;
+			    flex-wrap: wrap;
+			    height: max-content;
+			    align-content: unset;
+			    a {
+			    width: 30px;
+				}
+			}
+			.items-rrss-phone {
+			        height: 30px;
+					min-width: max-content;
+					grid-gap: 0;
+				    img{
+				    	width: 30px;
+				    }
+				    p {
+					    min-width: 100%;
+					}
+			}
+			.items-rrss-mail{
+				height: 30px;
+			    min-width: max-content;
+			    grid-gap: 0;
+			    position: absolute;
+			    bottom: 0;
+			    right: -25px;
+				img{
+					width: 30px;
+				}
+			}
+	    }
+	    .derechosreservados{
+	    	text-align: center;
+		    justify-content: center;
+		    padding: 15px;
+	    }
+	}
 
 
 	
 }
 @media screen and (min-width: 600px) and (max-width: 1000px){
-	
+	#first-frame {
+    height: auto;
+    padding: 70px;
+	    img.background {
+	    position: absolute;
+	    z-index: -10;
+	    width: 100%;
+	    top: unset;
+		}
+	}
+	section.consulting-parter {
+    height: auto;
+    padding: 40px 0;
+    	img.background {
+		    top: 0;
+		}
+	    .item-aws {
+	    	width: 25%;
+	    	margin-left: 0;
+		}
+	}
+	section#building{
+		p.helped {
+	    width: max-content;
+	    text-align: center;
+		}
+	}
+	section#solutions{
+		.items-solutions {
+	    width: auto;
+		}
+	}
+	section#frame-solution {
+    height: auto;
+    padding: 30px 0;
+    	.solutions-frame{
+    		.col.izq{
+    			p{
+    				font-size: 15px;
+    			}
+    		}
+    	}
+	}
+	section#form {
+    height: auto;
+    	img {
+		    top: 0;
+		}
+		p,h2{
+		    color: black;
+		}
+	}
+	footer {
+    height: auto;
+    min-height: 350px;
+    	img.background {
+		    bottom: 0;
+		}
+		.rrss{
+			width: auto;
+		}
+	}
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px){
-	
+	#first-frame {
+    height: auto;
+    padding: 70px;
+	    img.background {
+	    position: absolute;
+	    z-index: -10;
+	    width: 100%;
+	    top: unset;
+		}
+	}
+	section.consulting-parter {
+    height: auto;
+    padding: 40px 0;
+    	img.background {
+		    top: 0;
+		}
+	    .item-aws {
+	    	width: 25%;
+	    	margin-left: 0;
+		}
+	}
+	section#building{
+		p.helped {
+	    width: max-content;
+	    text-align: center;
+		}
+	}
+	section#solutions{
+		.items-solutions {
+	    width: auto;
+		}
+	}
+	section#frame-solution {
+    height: auto;
+    padding: 30px 0;
+    	.solutions-frame{
+    		.col.izq{
+    			p{
+    				font-size: 15px;
+    			}
+    		}
+    	}
+	}
+	section#form {
+    height: auto;
+    	img {
+		    top: 0;
+		}
+		p,h2{
+		    color: black;
+		}
+	}
+	footer {
+    height: auto;
+    min-height: 350px;
+    	img.background {
+		    bottom: 0;
+		}
+		.rrss{
+			width: auto;
+		}
+	}
 }

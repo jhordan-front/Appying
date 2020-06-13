@@ -42,6 +42,9 @@ img.background {
 .img-full {
   display: none;
 }
+.tab-responsive {
+  display: none;
+}
 header {
   height: 80px;
   display: flex;
@@ -557,7 +560,7 @@ section#form form#contact button img {
   width: 20px;
 }
 section#form p {
-  color: black;
+  color: white;
   width: 300px;
   margin: 0 auto;
   text-align: center;
@@ -850,5 +853,261 @@ footer .derechosreservados {
     position: absolute;
     padding: 0 15px;
     margin: 0 10%;
+  }
+  .iconos-flotantes {
+    display: none;
+  }
+  section#solutions .items-solutions {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+  section#solutions .items-solutions .active:before {
+    left: calc(50% - 40px);
+  }
+  section#solutions .items-solutions .sub-items-solutions {
+    border: unset;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+  }
+  section#solutions .items-solutions .sub-items-solutions img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  section#solutions .items-solutions .sub-items-solutions p {
+    display: none;
+  }
+  section#solutions .items-solutions .tab-responsive {
+    background-image: url(../img/fondos/fondo-applying-web-07.jpg);
+    padding: 15% 10%;
+    display: block;
+  }
+  section#solutions .items-solutions .tab-responsive h2 {
+    text-align: center;
+    font-size: 23px;
+  }
+  section#solutions .items-solutions .tab-responsive p {
+    font-weight: 100;
+    margin-top: 25px;
+  }
+  section#solutions .items-solutions .tab-responsive .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+  section#solutions .items-solutions .tab-responsive .buttons .boton-lets {
+    width: -webkit-max-content;
+    width: max-content;
+    font-size: 12px;
+    background: #F69621;
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    border-radius: 15px;
+  }
+  section#solutions .items-solutions .tab-responsive .buttons .boton-lets img {
+    width: 20px;
+  }
+  section#solutions .items-solutions .tab-responsive .buttons .boton-watch {
+    width: -webkit-max-content;
+    width: max-content;
+    font-size: 12px;
+    background: red;
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    border-radius: 15px;
+  }
+  section#solutions .items-solutions .tab-responsive .buttons .boton-watch img {
+    width: 20px;
+  }
+  section#frame-solution {
+    display: none;
+  }
+  section#form {
+    background-position-y: 185%;
+    background-position-x: 58%;
+    background-image: url(../img/fondos/fondo-applying-web-06.jpg);
+    height: auto;
+  }
+  section#form form#contact {
+    width: 300px;
+    padding: 0;
+  }
+  section#form form#contact button {
+    margin-bottom: 30px;
+    margin-top: 25px;
+  }
+  section#form p.our-partners {
+    color: black;
+    font-weight: 400;
+  }
+  footer {
+    background-image: url(../img/fondos/fondo-applying-web-02.jpg);
+    background-size: cover;
+  }
+  footer .rrss {
+    display: flex;
+    margin-top: 30px;
+  }
+  footer .rrss .items-rrss {
+    display: flex;
+    min-width: 60px;
+    flex-wrap: wrap;
+    height: -webkit-max-content;
+    height: max-content;
+    align-content: unset;
+  }
+  footer .rrss .items-rrss a {
+    width: 30px;
+  }
+  footer .rrss .items-rrss-phone {
+    height: 30px;
+    min-width: -webkit-max-content;
+    min-width: max-content;
+    grid-gap: 0;
+  }
+  footer .rrss .items-rrss-phone img {
+    width: 30px;
+  }
+  footer .rrss .items-rrss-phone p {
+    min-width: 100%;
+  }
+  footer .rrss .items-rrss-mail {
+    height: 30px;
+    min-width: -webkit-max-content;
+    min-width: max-content;
+    grid-gap: 0;
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+  }
+  footer .rrss .items-rrss-mail img {
+    width: 30px;
+  }
+  footer .derechosreservados {
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  #first-frame {
+    height: auto;
+    padding: 70px;
+  }
+  #first-frame img.background {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    top: unset;
+  }
+  section.consulting-parter {
+    height: auto;
+    padding: 40px 0;
+  }
+  section.consulting-parter img.background {
+    top: 0;
+  }
+  section.consulting-parter .item-aws {
+    width: 25%;
+    margin-left: 0;
+  }
+  section#building p.helped {
+    width: -webkit-max-content;
+    width: max-content;
+    text-align: center;
+  }
+  section#solutions .items-solutions {
+    width: auto;
+  }
+  section#frame-solution {
+    height: auto;
+    padding: 30px 0;
+  }
+  section#frame-solution .solutions-frame .col.izq p {
+    font-size: 15px;
+  }
+  section#form {
+    height: auto;
+  }
+  section#form img {
+    top: 0;
+  }
+  section#form p,
+  section#form h2 {
+    color: black;
+  }
+  footer {
+    height: auto;
+    min-height: 350px;
+  }
+  footer img.background {
+    bottom: 0;
+  }
+  footer .rrss {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  #first-frame {
+    height: auto;
+    padding: 70px;
+  }
+  #first-frame img.background {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    top: unset;
+  }
+  section.consulting-parter {
+    height: auto;
+    padding: 40px 0;
+  }
+  section.consulting-parter img.background {
+    top: 0;
+  }
+  section.consulting-parter .item-aws {
+    width: 25%;
+    margin-left: 0;
+  }
+  section#building p.helped {
+    width: -webkit-max-content;
+    width: max-content;
+    text-align: center;
+  }
+  section#solutions .items-solutions {
+    width: auto;
+  }
+  section#frame-solution {
+    height: auto;
+    padding: 30px 0;
+  }
+  section#frame-solution .solutions-frame .col.izq p {
+    font-size: 15px;
+  }
+  section#form {
+    height: auto;
+  }
+  section#form img {
+    top: 0;
+  }
+  section#form p,
+  section#form h2 {
+    color: black;
+  }
+  footer {
+    height: auto;
+    min-height: 350px;
+  }
+  footer img.background {
+    bottom: 0;
+  }
+  footer .rrss {
+    width: auto;
   }
 }
