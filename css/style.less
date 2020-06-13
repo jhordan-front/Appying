@@ -94,19 +94,23 @@ header {
 
 /*SECTION PRIMER FRAME*/
 #first-frame{
+    background-image: url(../img/fondos/fondo-applying-web-01.png);
+    background-position-y: center;
     padding: 0 10%;
     height: 100vh;
     display: flex;
+    z-index: -20;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
     overflow: hidden;
     img.background {
     position: absolute;
     z-index: -10;
     width: 100%;
     top: 0;
-    filter: brightness(0.25);
+    /* filter: brightness(0.25); */
+    opacity: .2;
 	}
 	.your-partner{
 		display: flex;

@@ -76,9 +76,12 @@ header .menu-header a:last-child {
 }
 /*SECTION PRIMER FRAME*/
 #first-frame {
+  background-image: url(../img/fondos/fondo-applying-web-01.png);
+  background-position-y: center;
   padding: 0 10%;
   height: 100vh;
   display: flex;
+  z-index: -20;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -89,7 +92,8 @@ header .menu-header a:last-child {
   z-index: -10;
   width: 100%;
   top: 0;
-  filter: brightness(0.25);
+  /* filter: brightness(0.25); */
+  opacity: 0.2;
 }
 #first-frame .your-partner {
   display: flex;
