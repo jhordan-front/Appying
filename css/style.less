@@ -54,6 +54,9 @@ img.background {
 				}
 			}
 		}
+.img-full{
+	display: none;
+}		
 // Encabezado
 header {
     height: 80px;
@@ -685,6 +688,32 @@ footer {
 
 /*RESPONSIVE*/
 @media screen and (min-width: 300px) and (max-width: 600px){
+	.clientes-logos {
+    opacity: 1 !important;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    place-content: space-evenly;
+    	img{
+    		padding: 8px;
+    	}
+	}
+	.title-section{
+		h2 {
+	    font-size: 35px;
+	    width: 300px;
+	   	margin:auto;
+		}
+		p {
+		    color: black;
+		    margin-top: 10px;
+		    width: 210px;
+		    margin: auto;
+		}
+	}
+	
 	img.background{
 		display: none;
 	}
@@ -835,7 +864,35 @@ footer {
 			}
 		}
 	}
-	
+	#building {
+    background-image: url(../img/fondos/fondo-applying-web-04.jpg);
+    background-position-y: 50%;
+	    p.helped {
+	    width: 200px;
+		}
+		.estadistica-aws{
+			position: relative;
+			.img-full{
+				display: block;
+			    width: 80%;
+			    margin: auto;
+			    border-radius: 15px;
+			    height: 30px;
+			    background: white;
+			    color: black;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    font-size: 15px;
+			    font-weight: 500;
+			    top: calc(50% - 15px);
+			    position: absolute;
+			    padding: 0 15px;
+			    margin: 0 10%;
+			}
+		}
+	}
+
 
 	
 }
