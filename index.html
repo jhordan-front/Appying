@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<script href="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -13,28 +14,26 @@
 			<img src="img/logo-blanco-partners.png" alt="">
 		</div>
 		<nav class="menu-header">
-			<a href="">
+			
+			<a href="#why-applying">
 				<div class="list-menu">Why us?</div>
 			</a>
-			<a href="">
+			<a href="#building">
 				<div class="list-menu">Cloud Value</div>
 			</a>
-			<a href="">
+			<a href="#solutions">
 				<div class="list-menu">Services</div>
 			</a>
-			<a href="">
+			<a href="#form">
 				<div class="list-menu">Contact</div>
 			</a>
 			<a href="">
 				<div class="list-menu" id="idioma-swap">ESP</div>
 			</a>
-			
-			
-			
 		</nav>
 	</header>
 	<section class="contenedor" id="first-frame">
-		<img class="background" src="img/fondos/fondo-applying-web-01.png" alt="">
+		<img class="background" src="img/fondos/fondo-applying-web-08.png" alt="">
 		<div class="your-partner">
 			<div class="absolute-1"></div>
 			<div class="absolute-2"></div>
@@ -440,5 +439,18 @@
 		</a>
 		
 	</div>
+		<script>
+			//$('.menu-header a').on('click',function(){
+			//let $this = $(this);
+		   // let href = $this.attr('href');
+		   // $('html, body').stop().animate({scrollTop: $(href).offset().top - 150}, 800);
+		//});
+			$('.menu-header a').on('click',function(e){
+			    e.preventDefault();
+			    let $this = $(this);
+			    let href = $this.attr('href');
+			    $('html, body').stop().animate({scrollTop: $(href).offset().top - 250}, 800);
+			});
+		</script>
 </body>
 </html> 

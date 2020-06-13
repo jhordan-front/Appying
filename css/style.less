@@ -105,7 +105,8 @@ header {
     position: absolute;
     z-index: -10;
     width: 100%;
-    top: -66vh;
+    top: 0;
+    filter: brightness(0.25);
 	}
 	.your-partner{
 		display: flex;
@@ -1060,8 +1061,8 @@ footer {
     display: none;
 	}
 	section#form {
-    background-position-y: 185%;
-    background-position-x: 58%;
+    background-position-y: -120%;
+    background-position-x: -60%;
     background-image: url(../img/fondos/fondo-applying-web-06.jpg);
     height: auto;
     	form#contact {
@@ -1140,6 +1141,10 @@ footer {
 	section.consulting-parter {
     height: auto;
     padding: 40px 0;
+    	.consultas-partner{
+    		width: auto;
+    		height: 380px;
+    	}
     	img.background {
 		    top: 0;
 		}
@@ -1149,6 +1154,12 @@ footer {
 		}
 	}
 	section#building{
+		.title-section{
+			p{
+				color: black !important;
+				margin-top: 10px !important;
+			}
+		}
 		p.helped {
 	    width: max-content;
 	    text-align: center;
@@ -1157,6 +1168,12 @@ footer {
 	section#solutions{
 		.items-solutions {
 	    width: auto;
+			.tab-responsive {
+			    background-image: url(../img/fondos/fondo-applying-web-07.jpg);
+			    padding: 15% 10%;
+			    display: block;
+			    margin-top: -2px;
+			}
 		}
 	}
 	section#frame-solution {
@@ -1169,6 +1186,22 @@ footer {
     			}
     		}
     	}
+	}
+	section#why-applying{
+		.marcas-aws{
+			a {
+		    font-size: 11px;
+		    width: 25%;
+		    text-align: center;
+		    font-weight: 100;
+		    min-height: 30px;
+		    margin-bottom: 20px;
+		    img{
+		    	padding: 5px;
+		    	margin-bottom: 5px;
+		    }
+			}
+		}
 	}
 	section#form {
     height: auto;

@@ -88,7 +88,8 @@ header .menu-header a:last-child {
   position: absolute;
   z-index: -10;
   width: 100%;
-  top: -66vh;
+  top: 0;
+  filter: brightness(0.25);
 }
 #first-frame .your-partner {
   display: flex;
@@ -1002,8 +1003,8 @@ footer .derechosreservados {
     display: none;
   }
   section#form {
-    background-position-y: 185%;
-    background-position-x: 58%;
+    background-position-y: -120%;
+    background-position-x: -60%;
     background-image: url(../img/fondos/fondo-applying-web-06.jpg);
     height: auto;
   }
@@ -1083,12 +1084,20 @@ footer .derechosreservados {
     height: auto;
     padding: 40px 0;
   }
+  section.consulting-parter .consultas-partner {
+    width: auto;
+    height: 380px;
+  }
   section.consulting-parter img.background {
     top: 0;
   }
   section.consulting-parter .item-aws {
     width: 25%;
     margin-left: 0;
+  }
+  section#building .title-section p {
+    color: black !important;
+    margin-top: 10px !important;
   }
   section#building p.helped {
     width: -webkit-max-content;
@@ -1098,12 +1107,30 @@ footer .derechosreservados {
   section#solutions .items-solutions {
     width: auto;
   }
+  section#solutions .items-solutions .tab-responsive {
+    background-image: url(../img/fondos/fondo-applying-web-07.jpg);
+    padding: 15% 10%;
+    display: block;
+    margin-top: -2px;
+  }
   section#frame-solution {
     height: auto;
     padding: 30px 0;
   }
   section#frame-solution .solutions-frame .col.izq p {
     font-size: 15px;
+  }
+  section#why-applying .marcas-aws a {
+    font-size: 11px;
+    width: 25%;
+    text-align: center;
+    font-weight: 100;
+    min-height: 30px;
+    margin-bottom: 20px;
+  }
+  section#why-applying .marcas-aws a img {
+    padding: 5px;
+    margin-bottom: 5px;
   }
   section#form {
     height: auto;
