@@ -28,8 +28,11 @@ $('.sub-items-solutions').on('click',function(){
 
 	$('.sub-items-solutions').closest('.content-item-solutions').find('.tab-responsive').removeClass('tab-active');
 	$this.closest('.content-item-solutions').find('.tab-responsive').addClass('tab-active');
-
-
 	$('.solutions-frame').addClass('none');
 	$(data).removeClass('none');
+});
+
+$('.videoResponsiveJS').on('click',function(){
+	let $this = $(this);	
+	$this.closest('.tab-responsive').find('.videoResponsive').toggle();
 });
