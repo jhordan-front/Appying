@@ -67,8 +67,8 @@ header .menu-header {
   display: flex;
 }
 header .menu-header a {
-  margin-left: 15px;
-  font-size: 13px;
+  margin-left: 30px;
+  font-size: 16px;
   font-weight: 500;
 }
 header .menu-header a:last-child {
@@ -191,10 +191,43 @@ header .menu-header a:last-child {
   place-content: space-evenly;
   border-radius: 10px;
   font-size: 16px;
+  overflow: hidden; 
 }
 #first-frame .your-partner .item-partner button img {
   width: 20px;
+  transition: 0.3s;
 }
+#first-frame .your-partner .item-partner button:hover {
+  padding-left: 20px;
+}
+#first-frame .your-partner .item-partner button:hover img {
+  transform: translateX(30px) translateY(-30px);
+}
+/*#first-frame .your-partner .item-partner button {
+  background-color: #F69621;
+  border: unset;
+  color: white;
+  width: 186px;
+  height: 28px;
+  position: relative;
+  bottom: -27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-content: space-evenly;
+  border-radius: 10px;
+  font-size: 16px;
+  overflow: hidden; 
+}
+#first-frame .your-partner .item-partner button:hover {
+  padding-left: 20px;
+}
+#first-frame .your-partner .item-partner button:hover img {
+  transform: translateX(30px) translateY(-30px);
+}
+#first-frame .your-partner .item-partner button img {
+  width: 20px;
+}*/
 /*ICONOS FLOTANTES*/
 .iconos-flotantes a:hover p {
   opacity: 1;
@@ -393,7 +426,7 @@ section#why-applying .aws-well {
   width: 770px;
   margin: auto;
   margin-top: 50px;
-  height: 160px;
+  height: 120px;
   padding: 0 170px;
   border-top: 2px solid white;
   padding-top: 30px;
@@ -640,6 +673,7 @@ section#form form#contact button {
   display: flex;
   justify-content: space-evenly;
   font-size: 18px;
+  margin-top: 40px;
 }
 section#form form#contact button img {
   width: 20px;
@@ -830,7 +864,9 @@ footer .derechosreservados {
   section.consulting-parter {
     background-image: url(../img/fondos/fondo-applying-web-02.jpg);
     flex-wrap: wrap;
-    padding-bottom: 110px;
+    padding-bottom: 20px;
+    height: auto;
+
   }
   section.consulting-parter .item-aws {
     width: 50%;
