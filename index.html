@@ -4,10 +4,13 @@
 	<meta charset="UTF-8">
 	<title>ApplyIng</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?v2">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<<<<<<< HEAD
 	<script href="js/jquery-3.5.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/507b78cca7.js" crossorigin="anonymous"></script>
+=======
+>>>>>>> b4fe6a68c892cbb2cab4d20416c1a7e61b13bc0c
 </head>
 <body>
 	<header>
@@ -35,6 +38,9 @@
 	</header>
 	<section class="contenedor" id="first-frame">
 		<img class="background" src="img/fondos/fondo-applying-web-08.png" alt="">
+		<video autoplay muted loop id="myVideo" class="videoBackground">
+		  <source src="img/videos/video-slider-applying-06.mp4" type="video/mp4">
+		</video>
 		<div class="your-partner">
 			<div class="absolute-1"></div>
 			<div class="absolute-2"></div>
@@ -183,64 +189,139 @@
 			<h2 class="strong-title"><strong>Solutions </strong>that we develop</h2>
 			<p>Well-knowing the potential of our team is the key to satisfy our customers.</p>
 		</div>
-
-
-
-
-
-
 		<div class="items-solutions">
-			<div class="sub-items-solutions tab-solution1 active" id="tab-solution1">
-				<img src="img/icon/iconos-applying-web-06.png"  alt="">
-				<h2 class="title-solutions">Cloud Migration Assessment</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
-			</div>
-			<div class="tab-responsive">
-				<h2 class="titulo-res">Cloud-Native Development</h2>
-				<p>
-				Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
-				</p>
-				<p>
-				Cloud-native application development allows enterprises to capitalize on the full power of cloud by delivering faster time to market, increased scalability, improved flexibility, and better consumer experiences — all while reducing cost.
-				</p>
-				<div class="buttons">
-					<div class="boton-lets"><img src="img/icon/iconos-applying-web-05.png" alt="">Let's go to the cloud</div>
-					<div class="boton-watch"><img src="img/icon/iconos-applying-web-05.png" alt="">Watch video</div>
+			<div class="content-item-solutions">
+				<div class="sub-items-solutions tab-solution1 active" id="tab-solution1" data="#solution-1">
+					<img src="img/icon/iconos-applying-web-06.png"  alt="">
+					<h2 class="title-solutions">Cloud Migration Assessment</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
+				</div>
+				<div class="tab-responsive tab-active">
+					<h2 class="titulo-res">Cloud Migration Assessment</h2>
+					<p>
+					Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
+					</p>
+					<p>
+					Cloud-native application development allows enterprises to capitalize on the full power of cloud by delivering faster time to market, increased scalability, improved flexibility, and better consumer experiences — all while reducing cost.
+					</p>
+					<div class="buttons">
+						<div class="boton-lets"><img src="img/icon/iconos-applying-web-05.png" alt="">Let's go to the cloud</div>
+						<div class="boton-watch videoResponsiveJS"><img src="img/icon/iconos-applying-web-05.png" alt="">Watch video</div>
+					</div>
+					<div class="videoResponsive" style="display: none;">
+						<video width=320  height=240 controls poster="img/icon/video-play-button-free-png-download-requitixio-play-button-png-400_284.png">
+			            <source src="img/videos/video-slider-applying-01.mp4" type="video/mp4">
+		              </video>
+					</div>
 				</div>
 			</div>
-
-
-
-
-
-			<div class="sub-items-solutions tab-solution2" id="tab-solution2">
-				<img src="img/icon/iconos-applying-web-08.png" alt="">
-				<h2 class="title-solutions">Cloud-Native Development </h2>
-				<p>Build applications that are resilient, manageable, observable, and dynamically scalable.</p>
+			<div class="content-item-solutions">
+				<div class="sub-items-solutions tab-solution2" id="tab-solution2" data="#solution-2">
+					<img src="img/icon/iconos-applying-web-08.png" alt="">
+					<h2 class="title-solutions">Cloud-Native Development </h2>
+					<p>Build applications that are resilient, manageable, observable, and dynamically scalable.</p>
+				</div>
+				<div class="tab-responsive">
+					<h2 class="titulo-res">Cloud-Native Development</h2>
+					<p>
+					Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
+					</p>
+					<p>
+					Cloud-native application development allows enterprises to capitalize on the full power of cloud by delivering faster time to market, increased scalability, improved flexibility, and better consumer experiences — all while reducing cost.
+					</p>
+					<div class="buttons">
+						<div class="boton-lets"><img src="img/icon/iconos-applying-web-05.png" alt="">Let's go to the cloud</div>
+						<div class="boton-watch videoResponsiveJS"><img src="img/icon/iconos-applying-web-05.png" alt="">Watch video</div>
+					</div>
+					<div class="videoResponsive" style="display: none;">
+						<video width=320  height=240 controls poster="img/icon/video-play-button-free-png-download-requitixio-play-button-png-400_284.png">
+			            <source src="img/videos/video-slider-applying-02.mp4" type="video/mp4">
+		              </video>
+					</div>
+				</div>
 			</div>
-			<div class="sub-items-solutions active tab-solution3" id="tab-solution3">
-				<img src="img/icon/iconos-applying-web-09.png"  alt="">
-				<h2 class="title-solutions">Cloud Managed Service</h2>
-				<p> Operate and manage your cloud environment supported by certified AWS cloud specialists.</p>
+			<div class="content-item-solutions">
+				<div class="sub-items-solutions tab-solution3" id="tab-solution3" data="#solution-3">
+					<img src="img/icon/iconos-applying-web-09.png"  alt="">
+					<h2 class="title-solutions">Cloud Managed Service</h2>
+					<p> Operate and manage your cloud environment supported by certified AWS cloud specialists.</p>
+				</div>
+				<div class="tab-responsive">
+					<h2 class="titulo-res">Cloud Managed Service</h2>
+					<p>
+					Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
+					</p>
+					<p>
+					Cloud-native application development allows enterprises to capitalize on the full power of cloud by delivering faster time to market, increased scalability, improved flexibility, and better consumer experiences — all while reducing cost.
+					</p>
+					<div class="buttons">
+						<div class="boton-lets"><img src="img/icon/iconos-applying-web-05.png" alt="">Let's go to the cloud</div>
+						<div class="boton-watch btnWatchResponsiveJS"><img src="img/icon/iconos-applying-web-05.png" alt="">Watch video</div>
+					</div>
+					<div class="watchVideo" style="display: none;">
+						<video width=320  height=240 controls poster="img/icon/video-play-button-free-png-download-requitixio-play-button-png-400_284.png">
+			            <source src="img/videos/video-slider-applying-03.mp4" type="video/mp4">
+		              </video>
+					</div>
+				</div>
 			</div>
-			<div class="sub-items-solutions tab-solution4" id="tab-solution4">
-				<img src="img/icon/iconos-applying-web-07.png" alt="">
-				<h2 class="title-solutions">Big Data and Analytics </h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
+			<div class="content-item-solutions">
+				<div class="sub-items-solutions tab-solution4" id="tab-solution4" data="#solution-4">
+					<img src="img/icon/iconos-applying-web-07.png" alt="">
+					<h2 class="title-solutions">Big Data and Analytics </h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
+				</div>
+				<div class="tab-responsive">
+					<h2 class="titulo-res">Big Data and Analytics</h2>
+					<p>
+					Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
+					</p>
+					<p>
+					Cloud-native application development allows enterprises to capitalize on the full power of cloud by delivering faster time to market, increased scalability, improved flexibility, and better consumer experiences — all while reducing cost.
+					</p>
+					<div class="buttons">
+						<div class="boton-lets"><img src="img/icon/iconos-applying-web-05.png" alt="">Let's go to the cloud</div>
+						<div class="boton-watch videoResponsiveJS"><img src="img/icon/iconos-applying-web-05.png" alt="">Watch video</div>
+					</div>
+					<div class="videoResponsive" style="display: none;">
+						<video width=320  height=240 controls poster="img/icon/video-play-button-free-png-download-requitixio-play-button-png-400_284.png">
+			            <source src="img/videos/video-slider-applying-04.mp4" type="video/mp4">
+		              </video>
+					</div>
+				</div>
 			</div>
-			<div class="sub-items-solutions tab-solution5" id="tab-solution5">
-				<img src="img/icon/iconos-applying-web-10.png"  alt="">
-				<h2 class="title-solutions">Cloud Training and Workshops </h2>
-				<p>We help you make it an innate skill of your company adipiscing elit, sed diam</p>
-			</div>
-			
+			<div class="content-item-solutions">
+				<div class="sub-items-solutions tab-solution5" id="tab-solution5" data="#solution-5">
+					<img src="img/icon/iconos-applying-web-10.png"  alt="">
+					<h2 class="title-solutions">Cloud Training and Workshops </h2>
+					<p>We help you make it an innate skill of your company adipiscing elit, sed diam</p>
+				</div>	
+				<div class="tab-responsive">
+					<h2 class="titulo-res">Cloud Training and Workshops</h2>
+					<p>
+					Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
+					</p>
+					<p>
+					Cloud-native application development allows enterprises to capitalize on the full power of cloud by delivering faster time to market, increased scalability, improved flexibility, and better consumer experiences — all while reducing cost.
+					</p>
+					<div class="buttons">
+						<div class="boton-lets"><img src="img/icon/iconos-applying-web-05.png" alt="">Let's go to the cloud</div>
+						<div class="boton-watch videoResponsiveJS"><img src="img/icon/iconos-applying-web-05.png" alt="">Watch video</div>
+					</div>
+					<div class="videoResponsive" style="display: none;">
+						<video width=320  height=240 controls poster="img/icon/video-play-button-free-png-download-requitixio-play-button-png-400_284.png">
+			            <source src="img/videos/video-slider-applying-05.mp4" type="video/mp4">
+		              </video>
+					</div>
+				</div>	
+			</div>	
 		</div>
 	</section>
 	<section class="contenedor" id="frame-solution">
 		<img class="background" src="img/fondos/fondo-applying-web-07.jpg" alt="">
 		<div class="solutions-frame" id="solution-1">
 			<div class="col izq">
-				<h2 class="title-solution">Cloud-Native Development</h2>
+				<h2 class="title-solution">Cloud Migration Assessment</h2>
 				<p>
 				Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
 				</p>
@@ -262,7 +343,7 @@
 
 			</div>
 		</div>
-		<div class="solutions-frame none" id="solution-2 ">
+		<div class="solutions-frame none" id="solution-2">
 			<div class="col izq">
 				<h2 class="title-solution">Cloud-Native Development</h2>
 				<p>
@@ -279,16 +360,16 @@
 				<div class="video-applying">
 			
 					 <video width=320  height=240 controls poster="">
-			            <source src="img/videos/video-slider-applying-01.mp4" type="video/mp4">
+			            <source src="img/videos/video-slider-applying-02.mp4" type="video/mp4">
 		              </video>
 		              <p>Big data @ AWS</p>
 				</div>	
 
 			</div>
 		</div>
-		<div class="solutions-frame none" id="solution-3 ">
+		<div class="solutions-frame none" id="solution-3">
 			<div class="col izq">
-				<h2 class="title-solution">Cloud-Native Development</h2>
+				<h2 class="title-solution">Cloud Managed Service</h2>
 				<p>
 				Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
 				</p>
@@ -303,16 +384,16 @@
 				<div class="video-applying">
 			
 					 <video width=320  height=240 controls poster="">
-			            <source src="img/videos/video-slider-applying-01.mp4" type="video/mp4">
+			            <source src="img/videos/video-slider-applying-03.mp4" type="video/mp4">
 		              </video>
 		              <p>Big data @ AWS</p>
 				</div>	
 
 			</div>
 		</div>
-		<div class="solutions-frame none" id="solution-4 ">
+		<div class="solutions-frame none" id="solution-4">
 			<div class="col izq">
-				<h2 class="title-solution">Cloud-Native Development</h2>
+				<h2 class="title-solution">Big Data and Analytics</h2>
 				<p>
 				Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
 				</p>
@@ -327,16 +408,16 @@
 				<div class="video-applying">
 			
 					 <video width=320  height=240 controls poster="">
-			            <source src="img/videos/video-slider-applying-01.mp4" type="video/mp4">
+			            <source src="img/videos/video-slider-applying-04.mp4" type="video/mp4">
 		              </video>
 		              <p>Big data @ AWS</p>
 				</div>	
 
 			</div>
 		</div>
-		<div class="solutions-frame none" id="solution-5 ">
+		<div class="solutions-frame none" id="solution-5">
 			<div class="col izq">
-				<h2 class="title-solution">Cloud-Native Development</h2>
+				<h2 class="title-solution">Cloud Training and Workshops</h2>
 				<p>
 				Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
 				</p>
@@ -351,7 +432,7 @@
 				<div class="video-applying">
 			
 					 <video width=320  height=240 controls poster="">
-			            <source src="img/videos/video-slider-applying-01.mp4" type="video/mp4">
+			            <source src="img/videos/video-slider-applying-05.mp4" type="video/mp4">
 		              </video>
 		              <p>Big data @ AWS</p>
 				</div>	
@@ -420,19 +501,19 @@
 		</div>
 	</footer>
 	<div class="iconos-flotantes">
-		<a href="">
+		<a href="#first-frame" class="scrollTopJs">
 			<div class="scroll-top">
 				<p>Scroll top</p>
 				<img src="img/icon/iconos-applying-web-19.png" alt="">
 			</div>
 		</a>
-		<a href="">
+		<a href="" target="_blank">
 			<div class="lets-go">
 				<p>Let's go cloud</p>
 				<img src="img/icon/iconos-applying-web-17.png" alt="">
 			</div>	
 		</a>
-		<a href="">
+		<a href="" target="_blank">
 			<div class="whatsapp">
 			<p>Send Whatsapp</p>
 			<img src="img/icon/iconos-applying-web-18.png" alt="">
@@ -440,18 +521,7 @@
 		</a>
 		
 	</div>
-		<script>
-			//$('.menu-header a').on('click',function(){
-			//let $this = $(this);
-		   // let href = $this.attr('href');
-		   // $('html, body').stop().animate({scrollTop: $(href).offset().top - 150}, 800);
-		//});
-			$('.menu-header a').on('click',function(e){
-			    e.preventDefault();
-			    let $this = $(this);
-			    let href = $this.attr('href');
-			    $('html, body').stop().animate({scrollTop: $(href).offset().top - 250}, 800);
-			});
-		</script>
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>	
 </body>
 </html> 

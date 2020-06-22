@@ -75,9 +75,15 @@ header .menu-header a:last-child {
   margin-left: 40px;
 }
 /*SECTION PRIMER FRAME*/
+.videoBackground {
+    position: absolute;
+    left: 0;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 #first-frame {
-  background-image: url(../img/fondos/fondo-applying-web-01.png);
-  background-position-y: center;
   padding: 0 10%;
   height: 100vh;
   display: flex;
@@ -86,6 +92,16 @@ header .menu-header a:last-child {
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+#first-frame:before{ 
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+  background-image: url(../img/fondos/fondo-applying-web-01.png);
+  background-position-y: center;      
+  z-index: -8;
+  opacity: 0.6;
 }
 #first-frame img.background {
   position: absolute;
@@ -412,7 +428,7 @@ section#why-applying .marcas-aws a {
   color: black;
 }
 #building .title-section p {
-  color: black;
+  color: black !important;
   margin-top: 10px;
 }
 #building .estadistica-aws {
@@ -430,12 +446,13 @@ section#why-applying .marcas-aws a {
 /*---------SOLUTIONS---------------*/
 section#solutions {
   height: auto;
+  background: whitesmoke;
 }
 section#solutions .title-section h2 {
   color: black;
 }
 section#solutions .title-section p {
-  color: black;
+  color: black !important;
 }
 section#solutions .items-solutions {
   height: auto;
@@ -453,6 +470,12 @@ section#solutions .items-solutions .sub-items-solutions {
   border-right: 2px solid black;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 100%;
+}
+section#solutions .items-solutions .sub-items-solutions:hover {
+  background: white;
 }
 section#solutions .items-solutions .sub-items-solutions img {
   width: 80%;
@@ -739,8 +762,21 @@ footer .derechosreservados {
   text-align: right;
   margin-right: 10px;
 }
+
+.scrollTopJs {
+  opacity: 0;
+  transition: 0.3s;
+}
+.scrollTopJs.active {
+  opacity: 1;
+}
+
+
 /*RESPONSIVE*/
 @media screen and (min-width: 300px) and (max-width: 600px) {
+  .videoBackground {
+    display: none;
+  }
   .clientes-logos {
     opacity: 1 !important;
     width: 80%;
@@ -881,6 +917,9 @@ footer .derechosreservados {
   section#why-applying .items-applying-res .sub-items-nth img {
     margin-bottom: 50px;
   }
+  .videoResponsive {
+    margin-top: 20px;
+  }
   section#why-applying .aws-well {
     width: 300px;
     margin: auto;
@@ -940,6 +979,7 @@ footer .derechosreservados {
     flex-direction: column;
     margin: auto;
     width: 100%;
+    margin-top: 20px;
   }
   section#solutions .items-solutions .active:before {
     left: calc(50% - 40px);
@@ -961,6 +1001,11 @@ footer .derechosreservados {
   section#solutions .items-solutions .tab-responsive {
     background-image: url(../img/fondos/fondo-applying-web-07.jpg);
     padding: 15% 10%;
+    display: block;
+    margin-top: -2px;
+    display: none;
+  }
+  section#solutions .items-solutions .tab-responsive.tab-active {
     display: block;
   }
   section#solutions .items-solutions .tab-responsive h2 {
