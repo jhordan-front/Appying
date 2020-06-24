@@ -50,29 +50,35 @@ img.background {
   display: none;
 }
 header {
-  height: 80px;
   display: flex;
   align-items: center;
   background-color: #231F20;
   justify-content: space-between;
-  padding: 0 93px;
+  padding: 12px 93px;
   position: fixed;
   width: 100%;
   z-index: 100;
 }
 header .logo-header {
-  width: 193px;
+  width: 250px;
 }
 header .menu-header {
   display: flex;
 }
 header .menu-header a {
-  margin-left: 15px;
-  font-size: 13px;
+  margin-left: 30px;
+  font-size: 16px;
   font-weight: 500;
 }
 header .menu-header a:last-child {
-  margin-left: 40px;
+  margin-left: 50px;
+  position: relative;
+}
+header .menu-header a:last-child img {
+    position: absolute;
+    width: 20px;
+    left: -25px;
+    top: 4px;
 }
 /*SECTION PRIMER FRAME*/
 .videoBackground {
@@ -92,16 +98,7 @@ header .menu-header a:last-child {
   position: relative;
   overflow: hidden;
 }
-#first-frame:before{ 
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;  
-  background-image: url(../img/fondos/fondo-applying-web-01.png);
-  background-position-y: center;      
-  z-index: -8;
-  opacity: 0.6;
-}
+
 #first-frame img.background {
   position: absolute;
   z-index: -10;
@@ -113,9 +110,9 @@ header .menu-header a:last-child {
 #first-frame .your-partner {
   display: flex;
   align-items: center;
-  width: 1020px;
-  height: 286.4px;
-  position: relative;
+  position: absolute;
+  left: 90px;
+  top: 105px;
 }
 #first-frame .your-partner .absolute-1 {
   width: 100px;
@@ -155,20 +152,19 @@ header .menu-header a:last-child {
 }
 #first-frame .your-partner .item-partner {
   margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: left;
   align-items: center;
   height: 100%;
 }
 #first-frame .your-partner .item-partner h2 {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
+  text-align: left;
 }
 #first-frame .your-partner .item-partner h3 {
   font-size: 60px;
   font-weight: 400;
+  text-align: left;
 }
 #first-frame .your-partner .item-partner p {
   font-size: 21px;
@@ -176,7 +172,36 @@ header .menu-header a:last-child {
   margin-top: 15px;
   margin-bottom: 25px;
 }
-#first-frame .your-partner .item-partner button {
+#first-frame .your-partner .item-partner a {
+  background-color: #F69621;
+  border: unset;
+  color: white;
+  position: relative;
+  border-radius: 30px;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 15px;
+  margin-top: 20px;
+  padding-left: 40px;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  display: inline-block;
+}
+#first-frame .your-partner .item-partner a img {
+  width: 20px;
+  transition: 0.3s;
+  margin-right: 10px;
+  position: absolute;
+  left: 12px;
+}
+#first-frame .your-partner .item-partner a:hover {
+  padding-left: 20px;
+  background-color: #e48006;
+}
+#first-frame .your-partner .item-partner a:hover img {
+  transform: translateX(30px) translateY(-30px);
+}
+/*#first-frame .your-partner .item-partner button {
   background-color: #F69621;
   border: unset;
   color: white;
@@ -190,10 +215,17 @@ header .menu-header a:last-child {
   place-content: space-evenly;
   border-radius: 10px;
   font-size: 16px;
+  overflow: hidden; 
+}
+#first-frame .your-partner .item-partner button:hover {
+  padding-left: 20px;
+}
+#first-frame .your-partner .item-partner button:hover img {
+  transform: translateX(30px) translateY(-30px);
 }
 #first-frame .your-partner .item-partner button img {
   width: 20px;
-}
+}*/
 /*ICONOS FLOTANTES*/
 .iconos-flotantes a:hover p {
   opacity: 1;
@@ -210,9 +242,21 @@ header .menu-header a:last-child {
   margin-bottom: 10px;
 }
 /*----------SEXTION CONSULTAS......*/
+.refieldimagen img {
+    width: 120px;
+    margin: 15px 20px;
+}
+.refieldimagen {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: solid 3px #ffffff3b;
+}
 section.consulting-parter {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 80px;
+  padding-bottom: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   display: flex;
   position: relative;
@@ -371,6 +415,7 @@ section#why-applying .items-applying .sub-items img {
 }
 section#why-applying .items-applying .sub-items p {
   min-height: 76px;
+  font-weight: 200;
 }
 section#why-applying .items-applying .sub-item-mid {
   position: relative;
@@ -392,7 +437,7 @@ section#why-applying .aws-well {
   width: 770px;
   margin: auto;
   margin-top: 50px;
-  height: 160px;
+  height: 120px;
   padding: 0 170px;
   border-top: 2px solid white;
   padding-top: 30px;
@@ -420,8 +465,19 @@ section#why-applying .marcas-aws a {
   position: relative;
   height: auto;
 }
+.clientes-logos img {
+    margin: 10px;
+}
+.clientes-logos {
+    text-align: center;
+    margin-bottom: 20px;
+}
 #building img.background {
-  bottom: -30%;
+bottom: 0px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 0px 30%;
 }
 #building .title-section h2 {
   color: black;
@@ -627,6 +683,7 @@ section#form form#contact select#solution {
   margin: 8px 0;
   padding: 15px;
   border-radius: 22px;
+  outline: none;
 }
 section#form form#contact button {
   background-color: #F48B12;
@@ -639,6 +696,7 @@ section#form form#contact button {
   display: flex;
   justify-content: space-evenly;
   font-size: 18px;
+  margin-top: 40px;
 }
 section#form form#contact button img {
   width: 20px;
@@ -669,7 +727,6 @@ section#form img.background {
 }
 /*FOOTER*/
 footer {
-  height: 50vh;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -680,11 +737,11 @@ footer img.background {
   bottom: -275%;
 }
 footer .col-top {
-  width: 140px;
-  margin: 20px auto;
+  width: 220px;
+  margin: 30px auto;
 }
 footer h2 {
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 300;
   margin: 0 auto;
   word-spacing: 3px;
@@ -693,7 +750,6 @@ footer .rrss {
   width: 60%;
   margin: 0 auto;
   display: grid;
-  height: 61px;
   position: relative;
   grid-template-columns: 25% 50% 25%;
 }
@@ -723,19 +779,19 @@ footer .rrss .items-rrss-mail {
   grid-gap: 10px;
 }
 footer .derechosreservados {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  word-spacing: 5px;
-  letter-spacing: 1px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 300;
-  background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    width: 100%;
+    /* bottom: 0; */
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .iconos-flotantes {
   width: 180px;
@@ -744,7 +800,7 @@ footer .derechosreservados {
   min-height: 200px;
   align-items: center;
   position: fixed;
-  bottom: calc(50% - 90px);
+  bottom: 20px;
   right: 20px;
 }
 .iconos-flotantes .scroll-top,
@@ -760,6 +816,7 @@ footer .derechosreservados {
 .iconos-flotantes .whatsapp p {
   text-align: right;
   margin-right: 10px;
+  pointer-events: none;
 }
 
 .scrollTopJs {
@@ -769,10 +826,217 @@ footer .derechosreservados {
 .scrollTopJs.active {
   opacity: 1;
 }
+.inputRow input, .inputRow select {
+    width: 100%;
+}
+.inputRow label {
+    position: absolute;
+    z-index: -1;
+    left: 15px;
+    top: 10px;
+    transition: 0.3s;
+}
+.inputRow {
+    position: relative;
+}
+button {
+  outline: none;
+}
+.inputRow input.error, .inputRow select.error {
+    background: #ffa4a4;
+    border: solid 1px #f75d5d !important;
+}
+.inputRow label.error {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 13px;
+    color: #f75d5d;
+}
 
 
 /*RESPONSIVE*/
-@media screen and (min-width: 300px) and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  #first-frame {
+    height: auto;
+    padding: 70px;
+  }
+  #first-frame img.background {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    top: unset;
+  }
+  section.consulting-parter {
+    height: auto;
+    padding: 40px 0;
+  }
+  section.consulting-parter .consultas-partner {
+    width: auto;
+    height: 340px;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  section.consulting-parter .consultas-partner .items-partner1 {
+    margin-top: 60px;
+  }
+  section.consulting-parter .consultas-partner .items-partner2 p {
+    width: 130px;
+  }
+  section.consulting-parter .consultas-partner .items-partner5 p {
+      width: 160px;
+  }
+  section.consulting-parter .consultas-partner .items-partner6 {
+      margin-top: 60px;
+  }
+  section.consulting-parter img.background {
+    top: 0;
+  }
+  section.consulting-parter .item-aws {
+    width: 25%;
+    margin-left: 0;
+  }
+  section#building .title-section p {
+    color: black !important;
+    margin-top: 10px !important;
+  }
+  section#building p.helped {
+    width: -webkit-max-content;
+    width: max-content;
+    text-align: center;
+  }
+  section#solutions .items-solutions {
+    width: auto;
+  }
+  section#solutions .items-solutions .tab-responsive {
+    background-image: url(../img/fondos/fondo-applying-web-07.jpg);
+    padding: 15% 10%;
+    display: block;
+    margin-top: -2px;
+  }
+  section#frame-solution {
+    height: auto;
+    padding: 30px 0;
+  }
+  section#frame-solution .solutions-frame .col.izq p {
+    font-size: 15px;
+  }
+  section#why-applying .marcas-aws a {
+    font-size: 11px;
+    width: 25%;
+    text-align: center;
+    font-weight: 100;
+    min-height: 30px;
+    margin-bottom: 20px;
+  }
+  section#why-applying .marcas-aws a img {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  section#form {
+    height: auto;
+  }
+  section#form img {
+    top: 0;
+  }
+  section#form p,
+  section#form h2 {
+    color: black !important;
+  }
+  footer {
+    height: auto;
+    min-height: 350px;
+  }
+  footer img.background {
+    bottom: 0;
+  }
+  footer .rrss {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  #first-frame {
+    height: auto;
+    padding: 70px;
+    min-height: 600px;
+  }
+  #first-frame img.background {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    top: unset;
+  }
+  section.consulting-parter {
+    height: auto;
+    padding: 40px 0;
+  }
+  section.consulting-parter img.background {
+    top: 0;
+  }
+  section.consulting-parter .item-aws {
+    width: 25%;
+    margin-left: 0;
+  }
+  section#building p.helped {
+    width: -webkit-max-content;
+    width: max-content;
+    text-align: center;
+  }
+  section#solutions .items-solutions {
+    width: auto;
+  }
+  section#frame-solution {
+    height: auto;
+    padding: 30px 0;
+  }
+  section#frame-solution .solutions-frame .col.izq p {
+    font-size: 15px;
+  }
+  section#form {
+    height: auto;
+  }
+  section#form img {
+    top: 0;
+  }
+  section#form p,
+  section#form h2 {
+    color: black;
+  }
+  footer {
+    height: auto;
+    min-height: 350px;
+  }
+  footer img.background {
+    bottom: 0;
+  }
+  footer .rrss {
+    width: auto;
+  }
+}
+
+@media (max-width: 815px) {
+  header {
+      justify-content: center;
+  }
+    #first-frame .your-partner {
+      position: relative;
+      left: 0px;
+      top: 0px;
+      margin-top: 80px;
+      text-align: center;
+  }
+  #first-frame .your-partner .item-partner {
+      text-align: center;
+  }
+  #first-frame .your-partner .item-partner h2, #first-frame .your-partner .item-partner h3 {
+      text-align: center;
+  }
+  .refieldimagen {
+      position: relative;
+      bottom: 0px;
+  }
   .videoBackground {
     display: none;
   }
@@ -829,7 +1093,9 @@ footer .derechosreservados {
   section.consulting-parter {
     background-image: url(../img/fondos/fondo-applying-web-02.jpg);
     flex-wrap: wrap;
-    padding-bottom: 110px;
+    padding-bottom: 20px;
+    height: auto;
+
   }
   section.consulting-parter .item-aws {
     width: 50%;
@@ -871,7 +1137,7 @@ footer .derechosreservados {
   }
   section#why-applying .title-section p {
     font-size: 15px;
-    padding: 0 17%;
+    padding: 0 15px;
   }
   section#why-applying .items-applying {
     display: none;
@@ -1075,6 +1341,7 @@ footer .derechosreservados {
   footer .rrss {
     display: flex;
     margin-top: 30px;
+    flex-wrap: wrap;
   }
   footer .rrss .items-rrss {
     display: flex;
@@ -1082,16 +1349,19 @@ footer .derechosreservados {
     flex-wrap: wrap;
     height: -webkit-max-content;
     height: max-content;
-    align-content: unset;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+    flex: none;
   }
   footer .rrss .items-rrss a {
     width: 30px;
   }
   footer .rrss .items-rrss-phone {
-    height: 30px;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    grid-gap: 0;
+    height: auto;
+    flex: none;
+    width: 100%;
+    grid-gap: 0px;
   }
   footer .rrss .items-rrss-phone img {
     width: 30px;
@@ -1100,13 +1370,12 @@ footer .derechosreservados {
     min-width: 100%;
   }
   footer .rrss .items-rrss-mail {
-    height: 30px;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    grid-gap: 0;
-    position: absolute;
-    bottom: 0;
-    right: -25px;
+    right: 0px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
   footer .rrss .items-rrss-mail img {
     width: 30px;
@@ -1116,147 +1385,28 @@ footer .derechosreservados {
     justify-content: center;
     padding: 15px;
   }
-}
-@media screen and (min-width: 600px) and (max-width: 1000px) {
-  #first-frame {
-    height: auto;
-    padding: 70px;
-  }
-  #first-frame img.background {
-    position: absolute;
-    z-index: -10;
-    width: 100%;
-    top: unset;
-  }
-  section.consulting-parter {
-    height: auto;
-    padding: 40px 0;
-  }
   section.consulting-parter .consultas-partner {
     width: auto;
-    height: 380px;
-  }
-  section.consulting-parter img.background {
-    top: 0;
-  }
-  section.consulting-parter .item-aws {
-    width: 25%;
-    margin-left: 0;
-  }
-  section#building .title-section p {
-    color: black !important;
-    margin-top: 10px !important;
-  }
-  section#building p.helped {
-    width: -webkit-max-content;
-    width: max-content;
-    text-align: center;
-  }
-  section#solutions .items-solutions {
-    width: auto;
-  }
-  section#solutions .items-solutions .tab-responsive {
-    background-image: url(../img/fondos/fondo-applying-web-07.jpg);
-    padding: 15% 10%;
-    display: block;
-    margin-top: -2px;
-  }
-  section#frame-solution {
-    height: auto;
-    padding: 30px 0;
-  }
-  section#frame-solution .solutions-frame .col.izq p {
-    font-size: 15px;
-  }
-  section#why-applying .marcas-aws a {
-    font-size: 11px;
-    width: 25%;
-    text-align: center;
-    font-weight: 100;
-    min-height: 30px;
+    height: 340px;
+    max-width: 400px;
     margin-bottom: 20px;
   }
-  section#why-applying .marcas-aws a img {
-    padding: 5px;
-    margin-bottom: 5px;
+  section.consulting-parter .consultas-partner .items-partner1 {
+    margin-top: 60px;
   }
-  section#form {
-    height: auto;
+  section.consulting-parter .consultas-partner .items-partner2 p {
+    width: 100px;
   }
-  section#form img {
-    top: 0;
+  section.consulting-parter .consultas-partner .items-partner5 p {
+      width: 120px;
   }
-  section#form p,
-  section#form h2 {
-    color: black;
+  section.consulting-parter .consultas-partner .items-partner6 {
+      margin-top: 60px;
   }
-  footer {
-    height: auto;
-    min-height: 350px;
+  section#why-applying .items-applying-res .sub-items .exagono p {
+    font-weight: 200;
   }
-  footer img.background {
-    bottom: 0;
-  }
-  footer .rrss {
-    width: auto;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  #first-frame {
-    height: auto;
-    padding: 70px;
-    min-height: 600px;
-  }
-  #first-frame img.background {
-    position: absolute;
-    z-index: -10;
-    width: 100%;
-    top: unset;
-  }
-  section.consulting-parter {
-    height: auto;
-    padding: 40px 0;
-  }
-  section.consulting-parter img.background {
-    top: 0;
-  }
-  section.consulting-parter .item-aws {
-    width: 25%;
-    margin-left: 0;
-  }
-  section#building p.helped {
-    width: -webkit-max-content;
-    width: max-content;
-    text-align: center;
-  }
-  section#solutions .items-solutions {
-    width: auto;
-  }
-  section#frame-solution {
-    height: auto;
-    padding: 30px 0;
-  }
-  section#frame-solution .solutions-frame .col.izq p {
-    font-size: 15px;
-  }
-  section#form {
-    height: auto;
-  }
-  section#form img {
-    top: 0;
-  }
-  section#form p,
-  section#form h2 {
-    color: black;
-  }
-  footer {
-    height: auto;
-    min-height: 350px;
-  }
-  footer img.background {
-    bottom: 0;
-  }
-  footer .rrss {
-    width: auto;
+  footer .col-top {
+    width: 150px;
   }
 }

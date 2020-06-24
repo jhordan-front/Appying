@@ -13,7 +13,7 @@ $('.scrollTopJs').on('click',function(e){
 
 $(window).scroll(function(){
 	let mytop = $(window).scrollTop();	
-	if (mytop > $('#building').offset().top){
+	if (mytop > $('.consulting-parter').offset().top){
 		$('.scrollTopJs').addClass('active');
 	} else {
 		$('.scrollTopJs').removeClass('active');
@@ -35,4 +35,56 @@ $('.sub-items-solutions').on('click',function(){
 $('.videoResponsiveJS').on('click',function(){
 	let $this = $(this);	
 	$this.closest('.tab-responsive').find('.videoResponsive').toggle();
+});
+
+
+
+const validator = $('#contact').validate({
+  errorPlacement: (error, element) => {
+    $(element)
+      .parent()
+      .append(error);
+  },
+  rules: {
+  	name: "required",
+	email: {
+		required: true,
+		email: true
+	},
+	phone: {
+		required: true,
+		number: true
+	},
+	solution: "required"
+  },
+  messages: {
+  	name: "* Campo requerido.",
+	email: {
+		required: "* Campo requerido.",
+		email: "Formato de Email inválido"
+	},
+	phone: {
+		required: "* Campo requerido.",
+		number: "Formato de teléfono inválido"
+	}
+  },
+  submitHandler: form => {
+    let formData = $(form).serialize();
+    //url 
+    let ajaxUrl = '';
+    //
+    $.ajax({
+      url: ajaxUrl,
+      method: 'POST',
+      data: formData
+    })
+      .done((data, xhrStatus, xhr) => {
+       	//openmodal
+
+      })
+      .fail(xhr => {
+        let err = JSON.parse(xhr.responseText);
+        validator.showErrors(err);
+      });
+  }
 });
