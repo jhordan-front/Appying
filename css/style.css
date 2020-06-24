@@ -87,7 +87,6 @@ header .menu-header a:last-child {
   padding: 0 10%;
   height: 100vh;
   display: flex;
-  z-index: -20;
   justify-content: center;
   align-items: center;
   position: relative;
