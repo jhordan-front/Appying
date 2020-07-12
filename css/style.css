@@ -108,11 +108,10 @@ header .menu-header a:last-child img {
   opacity: 0.2;
 }
 #first-frame .your-partner {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 90px;
-  top: 105px;
+    display: flex;
+    position: relative;
+    margin: auto 0;
+    width: 100%;
 }
 #first-frame .your-partner .absolute-1 {
   width: 100px;
@@ -151,7 +150,6 @@ header .menu-header a:last-child img {
   bottom: 0;
 }
 #first-frame .your-partner .item-partner {
-  margin: 0 auto;
   text-align: left;
   align-items: center;
   height: 100%;
@@ -392,6 +390,7 @@ section#why-applying .items-applying {
   height: 388px;
   display: grid;
   grid-template-columns: 275px auto 265px;
+  pointer-events: none;
 }
 section#why-applying .items-applying img.fondo-applying {
   width: 100%;

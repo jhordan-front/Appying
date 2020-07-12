@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/507b78cca7.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="img/fixeds/favicon-applying.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
 	<header>
@@ -182,18 +183,9 @@
 			<img src="img/icon/cliente5.png" alt="">
 		</div>
 	</section>
-	<section class="contenedor" id="solutions">
-		<div class="title-section">
-			<h2 class="strong-title"><strong>Solutions </strong>that we develop</h2>
-			<p>Well-knowing the potential of our team is the key to satisfy our customers.</p>
-		</div>
+	<!--<section class="contenedor" id="solutions">
 		<div class="items-solutions">
 			<div class="content-item-solutions">
-				<div class="sub-items-solutions tab-solution1 active" id="tab-solution1" data="#solution-1">
-					<img src="img/icon/iconos-applying-web-06.png" alt="">
-					<h2 class="title-solutions">Cloud Migration Assessment</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
-				</div>
 				<div class="tab-responsive tab-active">
 					<h2 class="titulo-res">Cloud Migration Assessment</h2>
 					<p>
@@ -214,11 +206,6 @@
 				</div>
 			</div>
 			<div class="content-item-solutions">
-				<div class="sub-items-solutions tab-solution2" id="tab-solution2" data="#solution-2">
-					<img src="img/icon/iconos-applying-web-08.png" alt="">
-					<h2 class="title-solutions">Cloud-Native Development </h2>
-					<p>Build applications that are resilient, manageable, observable, and dynamically scalable.</p>
-				</div>
 				<div class="tab-responsive">
 					<h2 class="titulo-res">Cloud-Native Development</h2>
 					<p>
@@ -239,11 +226,6 @@
 				</div>
 			</div>
 			<div class="content-item-solutions">
-				<div class="sub-items-solutions tab-solution3" id="tab-solution3" data="#solution-3">
-					<img src="img/icon/iconos-applying-web-09.png" alt="">
-					<h2 class="title-solutions">Cloud Managed Service</h2>
-					<p> Operate and manage your cloud environment supported by certified AWS cloud specialists.</p>
-				</div>
 				<div class="tab-responsive">
 					<h2 class="titulo-res">Cloud Managed Service</h2>
 					<p>
@@ -264,11 +246,6 @@
 				</div>
 			</div>
 			<div class="content-item-solutions">
-				<div class="sub-items-solutions tab-solution4" id="tab-solution4" data="#solution-4">
-					<img src="img/icon/iconos-applying-web-07.png" alt="">
-					<h2 class="title-solutions">Big Data and Analytics </h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
-				</div>
 				<div class="tab-responsive">
 					<h2 class="titulo-res">Big Data and Analytics</h2>
 					<p>
@@ -289,11 +266,6 @@
 				</div>
 			</div>
 			<div class="content-item-solutions">
-				<div class="sub-items-solutions tab-solution5" id="tab-solution5" data="#solution-5">
-					<img src="img/icon/iconos-applying-web-10.png" alt="">
-					<h2 class="title-solutions">Cloud Training and Workshops </h2>
-					<p>We help you make it an innate skill of your company adipiscing elit, sed diam</p>
-				</div>	
 				<div class="tab-responsive">
 					<h2 class="titulo-res">Cloud Training and Workshops</h2>
 					<p>
@@ -313,6 +285,86 @@
 					</div>
 				</div>	
 			</div>	
+
+		</div>
+	</section>-->
+
+
+
+
+
+	<section class="contenedor" id="solutions">
+		<div class="title-section">
+			<h2 class="strong-title"><strong>Solutions </strong>that we develop</h2>
+			<p>Well-knowing the potential of our team is the key to satisfy our customers.</p>
+		</div>
+		<div class="items-solutions swiper-container">
+			<div class="swiper-wrapper content-item-solutions">
+				<div class="swiper-slide sub-items-solutions tab-solution1 active" id="tab-solution1" data="#solution-1">
+					<img src="img/icon/iconos-applying-web-06.png" alt="">
+					<h2 class="title-solutions">Cloud Migration Assessment</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
+				</div>
+				<div class="swiper-slide sub-items-solutions tab-solution2" id="tab-solution2" data="#solution-2">
+					<img src="img/icon/iconos-applying-web-08.png" alt="">
+					<h2 class="title-solutions">Cloud-Native Development </h2>
+					<p>Build applications that are resilient, manageable, observable, and dynamically scalable.</p>
+				</div>
+				<div class="swiper-slide sub-items-solutions tab-solution3" id="tab-solution3" data="#solution-3">
+					<img src="img/icon/iconos-applying-web-09.png" alt="">
+					<h2 class="title-solutions">Cloud Managed Service</h2>
+					<p> Operate and manage your cloud environment supported by certified AWS cloud specialists.</p>
+				</div>
+				<div class="swiper-slide sub-items-solutions tab-solution4" id="tab-solution4" data="#solution-4">
+					<img src="img/icon/iconos-applying-web-07.png" alt="">
+					<h2 class="title-solutions">Big Data and Analytics </h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam adipiscing elit, sed diam</p>
+				</div>
+				<div class="swiper-slide sub-items-solutions tab-solution5" id="tab-solution5" data="#solution-5">
+					<img src="img/icon/iconos-applying-web-10.png" alt="">
+					<h2 class="title-solutions">Cloud Training and Workshops </h2>
+					<p>We help you make it an innate skill of your company adipiscing elit, sed diam</p>
+				</div>
+			    <!-- Add Arrows -->
+			  <div class="swiper-button-next"></div>
+			  <div class="swiper-button-prev"></div>
+			  </div>
+				<script src="js/swiper.min.js"></script>
+				<script>
+			    var swiper = new Swiper('.swiper-container', {
+			      slidesPerView: 5,
+			      spaceBetween: 30,
+			      slidesPerGroup: 1,
+			      loop: true,
+			      loopFillGroupWithBlank: true,
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+			  </script>
+				<!--
+				<div class="tab-responsive tab-active">
+					<h2 class="titulo-res">Cloud Migration Assessment</h2>
+					<p>
+					Cloud-native application development is crucial for digital transformation and innovation. Enterprises that adopt cloud-native application development see a marked increase in efficiency, scalability, and productivity, as well as improved user experience.
+					</p>
+					<p>
+					Cloud-native application development allows enterprises to capitalize on the full power of cloud by delivering faster time to market, increased scalability, improved flexibility, and better consumer experiences — all while reducing cost.
+					</p>
+					<div class="buttons">
+						<div class="boton-lets"><img src="img/icon/iconos-applying-web-05.png" alt="">Let's go to the cloud</div>
+						<div class="boton-watch videoResponsiveJS"><img src="img/icon/iconos-applying-web-05.png" alt="">Watch video</div>
+					</div>
+					<div class="videoResponsive" style="display: none;">
+						<video width="320" height="240" controls="" poster="img/icon/video-play-button-free-png-download-requitixio-play-button-png-400_284.png">
+			            <source src="img/videos/video-slider-applying-01.mp4" type="video/mp4">
+		              </video>
+					</div>
+				</div>-->
+			</div>
+
+
 		</div>
 	</section>
 	<section class="contenedor" id="frame-solution">
