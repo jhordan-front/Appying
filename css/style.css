@@ -27,7 +27,7 @@ img.background {
 .title-section {
   margin: auto;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .title-section h2 {
   font-size: 49px;
@@ -507,40 +507,40 @@ section#solutions .title-section h2 {
 }
 section#solutions .title-section p {
   color: black !important;
+  margin: 15px 0;
 }
 section#solutions .items-solutions {
-  height: auto;
-  min-height: 380px;
-  width: 1200px;
-  z-index: 30;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-top: 70px;
+    height: auto;
+    width: 1200px;
+    z-index: 30;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-bottom: 20px;
 }
 section#solutions .items-solutions .sub-items-solutions {
   position: relative;
   display: flex;
-  border-right: 2px solid black;
-  flex-direction: column;
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 11px;
 }
 section#solutions .items-solutions .sub-items-solutions:hover {
   background: white;
 }
 section#solutions .items-solutions .sub-items-solutions img {
-  width: 80%;
+  width: 35%;
   margin: 0 auto;
 }
 section#solutions .items-solutions .sub-items-solutions h2 {
   color: black;
-  width: 80%;
+  width: 65%;
   margin: auto;
   text-align: center;
-  font-size: 19px;
+  font-size: 17px;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -549,6 +549,8 @@ section#solutions .items-solutions .sub-items-solutions p {
   width: 80%;
   text-align: center;
   font-size: 15px;
+  margin: auto;
+
 }
 section#solutions .items-solutions .sub-items-solutions.active {
   background: white;
@@ -571,7 +573,7 @@ section#frame-solution {
   display: flex;
   position: relative;
   overflow: hidden;
-  padding: 150px 0px;
+  padding: 0;
 }
 section#frame-solution .background {
   width: 100%;
@@ -599,7 +601,7 @@ section#frame-solution .solutions-frame .col.izq h2.title-solution {
   font-weight: 500;
 }
 section#frame-solution .solutions-frame .col.izq p {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 200;
   text-align: left;
 }
