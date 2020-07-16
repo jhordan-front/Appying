@@ -390,13 +390,13 @@ section#why-applying .items-applying {
   height: 388px;
   display: grid;
   grid-template-columns: 275px auto 265px;
-  pointer-events: none;
 }
 section#why-applying .items-applying img.fondo-applying {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 section#why-applying .items-applying .sub-items {
   width: 180px;
@@ -497,6 +497,17 @@ bottom: 0px;
   margin-bottom: 30px;
   font-size: 20px;
 }
+.youtubeFrame {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    object-fit: cover;
+}
+.content-item-solutions {
+    display: flex;
+}
 /*---------SOLUTIONS---------------*/
 section#solutions {
   height: auto;
@@ -515,7 +526,6 @@ section#solutions .items-solutions {
     z-index: 30;
     margin: 0 auto;
     margin-top: 0px;
-    padding-bottom: 20px;
 }
 section#solutions .items-solutions .sub-items-solutions {
   position: relative;
@@ -526,13 +536,14 @@ section#solutions .items-solutions .sub-items-solutions {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 11px;
+  padding: 15px 20px;
+  min-height: 310px;
 }
 section#solutions .items-solutions .sub-items-solutions:hover {
   background: white;
 }
 section#solutions .items-solutions .sub-items-solutions img {
-  width: 35%;
+  width: 70%;
   margin: 0 auto;
 }
 section#solutions .items-solutions .sub-items-solutions h2 {
@@ -541,7 +552,7 @@ section#solutions .items-solutions .sub-items-solutions h2 {
   margin: auto;
   text-align: center;
   font-size: 17px;
-  margin: 0;
+  margin: auto;
   margin-bottom: 10px;
 }
 section#solutions .items-solutions .sub-items-solutions p {
@@ -555,15 +566,21 @@ section#solutions .items-solutions .sub-items-solutions p {
 section#solutions .items-solutions .sub-items-solutions.active {
   background: white;
 }
+.swiper-button-prev, .swiper-button-next {
+    color: white !important;
+    margin: 0px 5px;
+}
 section#solutions .items-solutions .active:before {
-  content: '';
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: -40px;
-  border-top: 40px solid white;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
 }
 section#solutions .items-solutions .tab-solution5 {
   border: none;
@@ -585,6 +602,7 @@ section#frame-solution .background {
 section#frame-solution .solutions-frame {
   width: 100%;
   display: flex;
+  padding: 80px 0px;
 }
 section#frame-solution .solutions-frame .col.izq {
   width: 50%;
@@ -856,7 +874,65 @@ button {
     font-size: 13px;
     color: #f75d5d;
 }
-
+.close-modal:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: black;
+    transform: rotate(-45deg);
+    top: 13px;
+    left: 5px;
+}
+.close-modal:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: black;
+    transform: rotate(45deg);
+    top: 13px;
+    left: 5px;
+}
+.close-modal {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+}
+.modalShow {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: #000000ba;
+    z-index: 500;
+    padding: 20px;
+    transition: 0.3s;
+}
+.contentModalShow p {
+    margin-top: 10px !important;
+}
+.contentModalShow h2 {
+    color: black;
+    text-align: center;
+}
+.contentModalShow {
+    position: absolute;
+    top: 50%;
+    width: calc(100% - 40px);
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    max-width: 550px;
+    padding-top: 30px;
+}
 
 /*RESPONSIVE*/
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -1016,12 +1092,20 @@ button {
     width: auto;
   }
 }
-
+.onlymobile {
+  display: none;
+}
 @media (max-width: 815px) {
   header {
       justify-content: center;
   }
-    #first-frame .your-partner {
+  .onlymobile {
+    display: block;
+  }
+  .hiddenMobile {
+    display: none;
+  }
+  #first-frame .your-partner {
       position: relative;
       left: 0px;
       top: 0px;
@@ -1064,6 +1148,15 @@ button {
     width: 210px;
     margin: auto;
   }
+  .content-item-solutions {
+    display: block;
+  }
+  section#solutions .items-solutions .sub-items-solutions {
+    min-height: 10px;
+  }
+  section#solutions .title-section p {
+    margin: auto;
+  }
   img.background {
     display: none;
   }
@@ -1076,7 +1169,11 @@ button {
     padding: 0 15%;
   }
   #first-frame img.background {
-    display: none;
+    display: block !important;
+    height: 100%;
+    z-index: 5;
+    object-fit: cover;
+    object-position: center;
   }
   #first-frame .your-partner .absolute-1,
   #first-frame .your-partner .absolute-2,
@@ -1248,7 +1345,7 @@ button {
     margin-top: 20px;
   }
   section#solutions .items-solutions .active:before {
-    left: calc(50% - 40px);
+      bottom: -28px;
   }
   section#solutions .items-solutions .sub-items-solutions {
     border: unset;
@@ -1271,8 +1368,53 @@ button {
     margin-top: -2px;
     display: none;
   }
-  section#solutions .items-solutions .tab-responsive.tab-active {
-    display: block;
+  section#solutions .items-solutions .activet .tab-responsive {
+      display: block !important;
+  }
+  .close-move-r:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background: black;
+      transform: rotate(-45deg);
+      top: 13px;
+      left: 5px;
+  }
+  .close-move-r:before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background: black;
+      transform: rotate(45deg);
+      top: 13px;
+      left: 5px;
+  }
+  .close-move-r {
+      cursor: pointer;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 20px;
+      right: 20px;
+  }
+  .move-r {
+      display: flex !important;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background: #eaeaea;
+      z-index: 500;
+      align-items: center;
+      padding: 20px;
+      transition: 0.3s;
+      transform: translateX(-120%);
+  }
+  .move-r.active {
+      transform: none; 
   }
   section#solutions .items-solutions .tab-responsive h2 {
     text-align: center;
